@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ClimaTec - Consulta del Tiempo</title>
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: 30px auto; padding: 0 10px; }
+    .estado { font-weight: bold; color: #555; }
+    .error { color: red; font-weight: bold; }
+    .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-top: 15px; background: #fafafa; }
+    input, button { padding: 8px; margin-right: 5px; }
+  </style>
+</head>
+<body>
+  <h2>ClimaTec 🌤️</h2>
+  <div style="margin-bottom: 10px;">
+    <input type="text" id="ciudad" placeholder="Ingresa ciudad (ej. Cusco)">
+    <button id="btn-buscar">Buscar Clima</button>
+  </div>
+  <button id="btn-medir">Probar Secuencial vs Parallel</button>
+
+  <p id="mensaje-estado" class="estado"></p>
+  <div id="resultado" class="card" style="display:none;"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
